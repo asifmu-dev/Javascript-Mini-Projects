@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master | Test Your Knowledge</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+    <main class="quiz-container">
+        <header class="quiz-header">
+            <h1>Quiz Master</h1>
+            <p>Test your knowledge and have fun!</p>
+        </header>
+
+        <section id="quiz-screen">
+            <div class="quiz-info">
+                <span id="question-count">Question 1 of 5</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+
+            <h2 id="question">Question will appear here</h2>
+
+            <div id="options" class="options-container"></div>
+
+            <p id="feedback" class="feedback" aria-live="polite"></p>
+
+            <button id="next-btn" class="next-btn" disabled>
+                Next Question →
+            </button>
+        </section>
+
+        <section id="result-screen" class="result-screen" hidden>
+            <div class="result-icon">🏆</div>
+            <h2>Quiz Completed!</h2>
+            <p id="result-message"></p>
+            <p id="final-score"></p>
+            <button id="restart-btn" class="next-btn">
+                Restart Quiz ↻
+            </button>
+        </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
